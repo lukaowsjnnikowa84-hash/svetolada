@@ -1,0 +1,180 @@
+/* css/karmic-debt.css */
+
+.karmic-debt-section {
+  background: linear-gradient(135deg, #1a0a1e, #2d1b36);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.no-debt {
+  text-align: center;
+  padding: 30px;
+}
+
+.no-debt .debt-icon {
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+
+.no-debt h3 {
+  color: #7bed9f;
+  font-size: 1.5em;
+}
+
+.debt-warning {
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  color: #ff6b6b;
+  font-size: 1.1em;
+}
+
+.debt-warning strong {
+  color: #ff4757;
+  font-size: 1.2em;
+}
+
+.debt-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #ffd700;
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+.debt-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(5px);
+}
+
+.debt-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffd700;
+  min-width: 80px;
+  text-align: center;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.debt-content {
+  flex: 1;
+}
+
+.debt-content h4 {
+  color: #ffd700;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.debt-short {
+  color: #f1c40f;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.debt-description {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.debt-manifestation,
+.debt-lesson,
+.debt-cure {
+  margin-top: 12px;
+}
+
+.debt-manifestation h5,
+.debt-lesson h5,
+.debt-cure h5 {
+  color: #f1c40f;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.debt-manifestation ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.debt-manifestation li {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 0.9em;
+  color: #ff6b6b;
+}
+
+.debt-lesson p {
+  color: #7bed9f;
+  padding: 8px 15px;
+  background: rgba(123, 237, 159, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #7bed9f;
+}
+
+.debt-cure p {
+  color: #74b9ff;
+  padding: 10px 15px;
+  background: rgba(116, 185, 255, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #74b9ff;
+}
+
+.debt-summary {
+  margin-top: 25px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 215, 0, 0.05),
+    rgba(255, 215, 0, 0.1)
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+.debt-summary h4 {
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+.debt-summary p {
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+  .debt-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .debt-number {
+    width: 100%;
+  }
+
+  .debt-manifestation ul {
+    justify-content: center;
+  }
+}

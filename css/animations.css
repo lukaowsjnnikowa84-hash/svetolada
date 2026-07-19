@@ -1,0 +1,133 @@
+/* ===== АНИМАЦИИ ДЛЯ ФОРМЫ ===== */
+
+/* Пульсация для активных элементов */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.1);
+  }
+}
+
+.cosmic-field:focus {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Появление элементов */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-step.active {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Свечение для кнопок */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.cosmic-btn .btn-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Парящие элементы */
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}
+
+.hero-icon {
+  animation: levitate 6s ease-in-out infinite;
+}
+
+/* Мерцание звёзд */
+@keyframes twinkle-slow {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.star-1 {
+  animation: twinkle-slow 4s ease-in-out infinite;
+}
+.star-2 {
+  animation: twinkle-slow 5s ease-in-out infinite 1s;
+}
+.star-3 {
+  animation: twinkle-slow 6s ease-in-out infinite 2s;
+}
+
+/* Спиннер загрузки */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-ring {
+  animation: spin 1.5s linear infinite;
+}
+
+.loader-ring:nth-child(2) {
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+
+.loader-ring:nth-child(3) {
+  animation-duration: 2.5s;
+}
+
+/* Градиентный текст */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background-size: 200% auto;
+  animation: gradient-shift 4s ease-in-out infinite;
+}

@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔮 Космический портрет личности</title>
+
+    <!-- Шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+
+  <body>
+    <!-- Фон со звёздами -->
+    <div id="stars-container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+
+    <!-- Главный контейнер -->
+    <div class="app-container">
+      <!-- Шапка с анимацией -->
+      <header class="hero">
+        <div class="hero-content">
+          <div class="hero-logo" style="text-align: center; margin: 0 auto; padding: 10px 0;">
+            <div style="text-align: center; margin: 0 auto; padding: 5px 0;">
+              <div style="text-align: center; margin-bottom: 10px;">
+                  <img src="img/logo.png" alt="Светолада" style="width: 80px; height: auto;" />
+              </div>
+
+              <!-- Название -->
+              <div style="font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: #ffd700; letter-spacing: 5px; margin-top: 6px; text-shadow: 0 0 40px rgba(255, 215, 0, 0.05);">
+                Светолада
+              </div>
+              <div style="width: 30px; height: 1px; background: linear-gradient(90deg, transparent, #ffd700, transparent); margin: 5px auto;"></div>
+              <div style="font-size: 0.55rem; color: #a8a4c8; letter-spacing: 4px; text-transform: uppercase; font-weight: 300;">
+                космический портрет
+              </div>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="gradient-text">Космический портрет</span>
+              <span class="subtitle">Ваша личность в 5 системах</span>
+            </h1>
+
+            <nav style="text-align: center; margin-top: 15px;">
+              <a href="about.html" style="color: #a8a4c8; text-decoration: none; padding: 8px 20px; border: 1px solid rgba(255,215,0,0.1); border-radius: 20px; transition: all 0.3s; font-size: 0.9rem;"
+                onmouseover="this.style.borderColor='#ffd700'; this.style.color='#ffd700';"
+                onmouseout="this.style.borderColor='rgba(255,215,0,0.1)'; this.style.color='#a8a4c8';">
+                🌿 О проекте
+              </a>
+              <a href="index.html" style="color: #a8a4c8; text-decoration: none; padding: 8px 20px; border: 1px solid rgba(255,215,0,0.05); border-radius: 20px; transition: all 0.3s; font-size: 0.9rem; margin-left: 10px;"
+                onmouseover="this.style.borderColor='#ffd700'; this.style.color='#ffd700';"
+                onmouseout="this.style.borderColor='rgba(255,215,0,0.05)'; this.style.color='#a8a4c8';">
+                🔮 Космический портрет
+              </a>
+            </nav>
+
+            <p class="hero-description">
+              Нумерология · Астрология · Джйотиш · Аюрведа · Карма
+            </p>
+            <div class="hero-divider">
+              <span class="line"></span>
+              <i class="fas fa-gem"></i>
+              <span class="line"></span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Форма ввода -->
+        <main class="main-content">
+          <div class="form-wrapper">
+            <form id="mainForm" class="cosmic-form">
+              <!-- Прогресс-бар -->
+              <div class="form-progress">
+                <div class="progress-step active" data-step="1">
+                  <span class="step-number">1</span>
+                  <span class="step-label">Ваши данные</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="2">
+                  <span class="step-number">2</span>
+                  <span class="step-label">Данные партнёра</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="3">
+                  <span class="step-number">3</span>
+                  <span class="step-label">Результат</span>
+                </div>
+              </div>
+
+              <!-- Шаг 1: Данные пользователя -->
+              <div class="form-step active" data-step="1">
+                <div class="step-header">
+                  <i class="fas fa-user-astronaut"></i>
+                  <h2>Ваши данные</h2>
+                  <p>Заполните информацию о себе</p>
+                </div>
+
+                <div class="form-group cosmic-input">
+                  <label>
+                    <i class="fas fa-user"></i>
+                    Полное имя
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="userName"
+                    required
+                    placeholder="Иванов Иван Иванович"
+                    class="cosmic-field"
+                  />
+                  <div class="input-glow"></div>
+                  <span class="hint">Используйте имя, данное при рождении</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group cosmic-input">
+                    <label>
+                      <i class="fas fa-calendar-day"></i>
+                      Дата рождения
+                      <span class="required">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      id="userBirthDate"
+                      required
+                      class="cosmic-field"
+                    />
+                    <div class="input-glow"></div>
+                  </div>
+
+                  <div class="form-group cosmic-input">
+                    <label>
+                      <i class="fas fa-clock"></i>
+                      Время рождения
+                    </label>
+                    <input
+                      type="time"
+                      id="userBirthTime"
+                      value="12:00"
+                      class="cosmic-field"
+                    />
+                    <div class="input-glow"></div>
+                    <span class="hint">⏰ Если не знаете — оставьте 12:00</span>
+                  </div>
+                </div>
+
+                <div class="form-group cosmic-input">
+                  <label>
+                    <i class="fas fa-map-pin"></i>
+                    Место рождения
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="userBirthPlace"
+                    required
+                    placeholder="Москва, Россия"
+                    class="cosmic-field"
+                  />
+                  <div class="input-glow"></div>
+                  <span class="hint">📍 Город, область, страна</span>
+                </div>
+              </div>
+
+              <!-- Шаг 2: Данные партнёра -->
+              <div class="form-step" data-step="2">
+                <div class="step-header">
+                  <i class="fas fa-heart"></i>
+                  <h2>Данные партнёра</h2>
+                  <p>Если хотите узнать совместимость</p>
+                </div>
+
+                <div class="toggle-partner">
+                  <label class="cosmic-toggle">
+                    <input type="checkbox" id="hasPartner" />
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label">Добавить партнёра</span>
+                  </label>
+                </div>
+
+                <div id="partnerFields" style="display: none">
+                  <div class="form-group cosmic-input">
+                    <label>
+                      <i class="fas fa-user-friends"></i>
+                      Имя партнёра
+                    </label>
+                    <input
+                      type="text"
+                      id="partnerName"
+                      placeholder="Петрова Мария Сергеевна"
+                      class="cosmic-field"
+                    />
+                    <div class="input-glow"></div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group cosmic-input">
+                      <label>
+                        <i class="fas fa-calendar-day"></i>
+                        Дата рождения
+                      </label>
+                      <input
+                        type="date"
+                        id="partnerBirthDate"
+                        class="cosmic-field"
+                      />
+                      <div class="input-glow"></div>
+                    </div>
+
+                    <div class="form-group cosmic-input">
+                      <label>
+                        <i class="fas fa-clock"></i>
+                        Время рождения
+                      </label>
+                      <input
+                        type="time"
+                        id="partnerBirthTime"
+                        value="12:00"
+                        class="cosmic-field"
+                      />
+                      <div class="input-glow"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group cosmic-input">
+                    <label>
+                      <i class="fas fa-map-pin"></i>
+                      Место рождения партнёра
+                    </label>
+                    <input
+                      type="text"
+                      id="partnerBirthPlace"
+                      placeholder="Санкт-Петербург, Россия"
+                      class="cosmic-field"
+                    />
+                    <div class="input-glow"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Шаг 3: Кнопка отправки -->
+              <div class="form-step" data-step="3">
+                <div class="step-header">
+                  <i class="fas fa-rocket"></i>
+                  <h2>Готовим портрет</h2>
+                  <p>Проверьте данные и получите портрет</p>
+                </div>
+
+                <div class="form-summary">
+                  <div class="summary-item" id="summaryName">
+                    <i class="fas fa-user"></i>
+                    <span class="summary-label">Имя:</span>
+                    <span class="summary-value">—</span>
+                  </div>
+                  <div class="summary-item" id="summaryBirth">
+                    <i class="fas fa-calendar-day"></i>
+                    <span class="summary-label">Дата рождения:</span>
+                    <span class="summary-value">—</span>
+                  </div>
+                  <div class="summary-item" id="summaryPlace">
+                    <i class="fas fa-map-pin"></i>
+                    <span class="summary-label">Место:</span>
+                    <span class="summary-value">—</span>
+                  </div>
+                  <div class="summary-item" id="summaryPartner">
+                    <i class="fas fa-heart"></i>
+                    <span class="summary-label">Партнёр:</span>
+                    <span class="summary-value">Не указан</span>
+                  </div>
+                </div>
+
+                <button type="button" id="generateBtn" class="btn-submit cosmic-btn">
+                  <span class="btn-text" id="btnText">🔮 Получить космический портрет</span>
+                  <span class="btn-glow"></span>
+                  <span class="btn-shimmer"></span>
+                </button>
+              </div>
+
+              <!-- Навигация между шагами -->
+              <div class="form-navigation">
+                <button type="button" class="btn-nav prev" id="prevStep">
+                  <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <button type="button" class="btn-nav next" id="nextStep">
+                  Далее <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Загрузка -->
+          <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-content">
+              <div class="cosmic-loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-text" id="loaderText">
+                  🌟 Подготовка...
+                  <span class="progress-steps" id="progressSteps"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- ===== КОНТЕЙНЕР ОТЧЁТА (И ДЛЯ ЭКРАНА, И ДЛЯ PDF) ===== -->
+      <div id="reportContent" class="report-container" style="display: none; margin-top: 40px; padding: 30px; background: rgba(255, 215, 0, 0.03); border: 1px solid rgba(255, 215, 0, 0.1); border-radius: 20px;">
+        <div id="reportInner">
+          <!-- Сюда будет вставлен отчёт из main.js -->
+        </div>
+        <!-- Кнопка скачивания PDF -->
+        <div style="text-align: center; margin-top: 30px;">
+          <button id="downloadBtn" class="download-btn">
+            📄 Скачать PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== СКРИПТЫ ===== -->
+      <!-- Главный скрипт (только один раз!) -->
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
+
+      <!-- Подключение библиотек для PDF -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+      </script>
+
+      <!-- Подключение генератора PDF -->
+      <script type="module" src="js/pdf-generator.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,164 @@
+/* css/karmic-compatibility.css */
+
+.karmic-compatibility-section {
+  background: linear-gradient(135deg, #1a0a1e, #2d1b36);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.compatibility-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.score-display {
+  text-align: center;
+  background: rgba(255, 215, 0, 0.05);
+  padding: 20px 40px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.score-number {
+  font-size: 3.5em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.score-label {
+  font-size: 1.1em;
+  color: #ffd700;
+  margin-top: 5px;
+}
+
+.debt-summary-compact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.debt-summary-compact h4 {
+  color: #ddd;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.debt-summary-compact .no-debt-label {
+  color: #7bed9f;
+}
+
+.debt-summary-compact .debt-title {
+  display: block;
+  font-size: 0.8em;
+  color: #f1c40f;
+  margin-top: 3px;
+}
+
+.debt-user {
+  background: rgba(255, 215, 0, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 3px solid #ffd700;
+}
+
+.debt-partner {
+  background: rgba(100, 200, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 3px solid #74b9ff;
+}
+
+.compatibility-description {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.compatibility-strengths {
+  background: rgba(123, 237, 159, 0.05);
+  border-left: 3px solid #7bed9f;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.compatibility-strengths h4 {
+  color: #7bed9f;
+}
+
+.compatibility-challenges {
+  background: rgba(255, 107, 107, 0.05);
+  border-left: 3px solid #ff6b6b;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.compatibility-challenges h4 {
+  color: #ff6b6b;
+}
+
+.compatibility-forecast {
+  background: rgba(116, 185, 255, 0.05);
+  border-left: 3px solid #74b9ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.compatibility-forecast h4 {
+  color: #74b9ff;
+}
+
+.compatibility-forecast p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.compatibility-advice {
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.compatibility-advice h4 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.compatibility-advice ul {
+  list-style: none;
+  padding: 0;
+}
+
+.compatibility-advice li {
+  padding: 6px 0;
+  color: #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.compatibility-advice li:last-child {
+  border-bottom: none;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .debt-summary-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .score-number {
+    font-size: 2.5em;
+  }
+}

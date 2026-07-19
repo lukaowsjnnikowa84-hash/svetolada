@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <div
+      class="hero-logo"
+      style="text-align: center; margin: 0 auto; padding: 10px 0"
+    >
+      <!-- ЛОГОТИП (SVG) -->
+      <svg
+        width="120"
+        height="120"
+        viewBox="0 0 120 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style="display: block; margin: 0 auto"
+      >
+        <!-- Внешнее свечение -->
+        <circle
+          cx="60"
+          cy="60"
+          r="58"
+          fill="none"
+          stroke="#ffd700"
+          stroke-width="0.5"
+          opacity="0.1"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="48"
+          fill="none"
+          stroke="#ffd700"
+          stroke-width="0.5"
+          opacity="0.15"
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="38"
+          fill="none"
+          stroke="#ffd700"
+          stroke-width="0.5"
+          opacity="0.1"
+        />
+
+        <!-- Основной символ: Свет в центре (звезда с лучами) -->
+        <g transform="translate(60, 55)">
+          <!-- Звезда -->
+          <path
+            d="M0 -28 L4 -8 L24 -8 L8 4 L14 22 L0 12 L-14 22 L-8 4 L-24 -8 L-4 -8 Z"
+            fill="#ffd700"
+            opacity="0.9"
+          />
+          <!-- Внутренняя звезда -->
+          <path
+            d="M0 -16 L2 -4 L12 -4 L4 2 L7 12 L0 6 L-7 12 L-4 2 L-12 -4 L-2 -4 Z"
+            fill="#fff"
+            opacity="0.6"
+          />
+          <!-- Световой круг -->
+          <circle cx="0" cy="0" r="6" fill="#fff" opacity="0.3" />
+          <circle cx="0" cy="0" r="3" fill="#fff" opacity="0.6" />
+
+          <!-- Лучи света -->
+          <line
+            x1="0"
+            y1="-36"
+            x2="0"
+            y2="-44"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.2"
+          />
+          <line
+            x1="0"
+            y1="36"
+            x2="0"
+            y2="44"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.2"
+          />
+          <line
+            x1="-36"
+            y1="0"
+            x2="-44"
+            y2="0"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.2"
+          />
+          <line
+            x1="36"
+            y1="0"
+            x2="44"
+            y2="0"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.2"
+          />
+
+          <!-- Диагональные лучи -->
+          <line
+            x1="-20"
+            y1="-20"
+            x2="-28"
+            y2="-28"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.15"
+          />
+          <line
+            x1="20"
+            y1="-20"
+            x2="28"
+            y2="-28"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.15"
+          />
+          <line
+            x1="-20"
+            y1="20"
+            x2="-28"
+            y2="28"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.15"
+          />
+          <line
+            x1="20"
+            y1="20"
+            x2="28"
+            y2="28"
+            stroke="#ffd700"
+            stroke-width="1.5"
+            opacity="0.15"
+          />
+        </g>
+
+        <!-- Орбитальные кольца (символ космоса) -->
+        <ellipse
+          cx="60"
+          cy="55"
+          rx="45"
+          ry="12"
+          fill="none"
+          stroke="#ffd700"
+          stroke-width="0.5"
+          opacity="0.15"
+          transform="rotate(-15, 60, 55)"
+        />
+        <ellipse
+          cx="60"
+          cy="55"
+          rx="45"
+          ry="12"
+          fill="none"
+          stroke="#ffd700"
+          stroke-width="0.5"
+          opacity="0.1"
+          transform="rotate(15, 60, 55)"
+        />
+
+        <!-- Маленькие звёздочки вокруг -->
+        <circle cx="20" cy="25" r="1.5" fill="#ffd700" opacity="0.3" />
+        <circle cx="100" cy="30" r="1.5" fill="#ffd700" opacity="0.25" />
+        <circle cx="25" cy="95" r="1.5" fill="#ffd700" opacity="0.2" />
+        <circle cx="95" cy="90" r="1.5" fill="#ffd700" opacity="0.25" />
+        <circle cx="10" cy="60" r="1" fill="#ffd700" opacity="0.15" />
+        <circle cx="110" cy="55" r="1" fill="#ffd700" opacity="0.15" />
+      </svg>
+
+      <!-- Название -->
+      <div
+        style="
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #ffd700;
+          letter-spacing: 6px;
+          margin-top: 10px;
+          text-shadow: 0 0 40px rgba(255, 215, 0, 0.05);
+        "
+      >
+        Светолада
+      </div>
+      <div
+        style="
+          width: 40px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #ffd700, transparent);
+          margin: 6px auto;
+        "
+      ></div>
+      <div
+        style="
+          font-size: 0.6rem;
+          color: #a8a4c8;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          font-weight: 300;
+        "
+      >
+        космический портрет личности
+      </div>
+    </div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌿 О проекте «Светолада»</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <style>
+      body {
+        background: #0a0a1a;
+        color: #f0eef8;
+        font-family: "Inter", sans-serif;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+      .about-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 215, 0, 0.05);
+        border-radius: 20px;
+        padding: 50px 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
+      .about-container h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.8em;
+        text-align: center;
+        background: linear-gradient(90deg, #f7971e, #ffd200);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 10px;
+      }
+      .about-container .subtitle {
+        text-align: center;
+        color: #a8a4c8;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+      }
+      .about-container h2 {
+        color: #ffd700;
+        font-family: "Playfair Display", serif;
+        font-size: 1.8em;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.05);
+        padding-bottom: 10px;
+      }
+      .about-container p {
+        color: #d0cce8;
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+      }
+      .about-container .highlight {
+        color: #ffd700;
+        font-weight: 600;
+      }
+      .about-container .quote {
+        background: rgba(255, 215, 0, 0.02);
+        border-left: 4px solid #ffd700;
+        padding: 20px 25px;
+        border-radius: 8px;
+        margin: 25px 0;
+        font-style: italic;
+        color: #d0cce8;
+        font-size: 1.1rem;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 25px;
+      }
+      .contact-card {
+        background: rgba(255, 215, 0, 0.02);
+        border: 1px solid rgba(255, 215, 0, 0.05);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s;
+      }
+      .contact-card:hover {
+        background: rgba(255, 215, 0, 0.04);
+        border-color: rgba(255, 215, 0, 0.15);
+        transform: translateY(-2px);
+      }
+      .contact-card .icon {
+        font-size: 2.5em;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .contact-card h4 {
+        color: #ffd700;
+        margin-bottom: 5px;
+      }
+      .contact-card p {
+        color: #a8a4c8;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+      .contact-card .phone {
+        color: #f0eef8;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .btn-back {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 14px 40px;
+        background: rgba(255, 215, 0, 0.03);
+        border: 1px solid rgba(255, 215, 0, 0.1);
+        border-radius: 12px;
+        color: #a8a4c8;
+        text-decoration: none;
+        transition: all 0.3s;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .btn-back:hover {
+        border-color: #ffd700;
+        color: #ffd700;
+        background: rgba(255, 215, 0, 0.05);
+      }
+      .btn-center {
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        .about-container {
+          padding: 25px 20px;
+        }
+        .about-container h1 {
+          font-size: 2rem;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="about-container">
+      <h1>🌿 Светолада</h1>
+      <p class="subtitle">Космический портрет личности — первый шаг к себе</p>
+
+      <h2>✨ О проекте</h2>
+      <p>
+        <span class="highlight">«Светолада»</span> — это пространство, где вы
+        можете встретиться с собой. Мы не даём готовых ответов. Мы даём
+        <span class="highlight">зеркало</span>, в котором можно увидеть свои
+        сильные стороны, тени, риски и возможности.
+      </p>
+      <p>
+        Мы соединили
+        <span class="highlight"
+          >нумерологию, астрологию, аюрведу и джйотиш</span
+        >
+        в единый синтез, чтобы показать вам,
+        <span class="highlight">кто вы есть</span> — и куда вам стоит направить
+        внимание.
+      </p>
+
+      <div class="quote">
+        «Светолада» — это первый шаг на пути к себе. Она даёт вам карту,
+        зеркало, подсказку. Но живая встреча с астрологом, который видит ваше
+        тело и слышит вашу душу, — это совсем другой уровень. Если вы
+        чувствуете, что вам нужно больше, чем цифры, — ищите такого наставника.
+        «Светолада» лишь открывает дверь. А войти в неё — ваш выбор.
+      </div>
+
+      <h2>🧘 Путь глубже: Йога · Аюрведа · Джйотиш</h2>
+      <p>
+        Если вы хотите пойти глубже — понять свои кармические задачи,
+        восстановить баланс тела и духа, получить живую поддержку, — мы
+        приглашаем вас к нашим друзьям и партнёрам.
+      </p>
+      <p>
+        Они соединяют древнюю мудрость
+        <span class="highlight">Йоги, Аюрведы и Джйотиш</span>
+        с живым вниманием к каждому человеку.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="icon">📍</span>
+          <h4>Центр в Ставрополе</h4>
+          <p>ул. Шпаковская, 81</p>
+          <p class="phone">
+            <span style="color: #ffd700">📞 Юлия:</span> +7 918 769-33-58
+          </p>
+          <p class="phone">
+            <span style="color: #ffd700">📞 Анатолий:</span> +7 988 678-54-69
+          </p>
+        </div>
+        <div class="contact-card">
+          <span class="icon">📺</span>
+          <h4>Канал в MAX</h4>
+          <p style="color: #d0cce8; font-weight: 500">«Йога Джйотиш Аюрведа»</p>
+          <p style="color: #a8a4c8; font-size: 0.85rem">
+            Подписывайтесь, чтобы быть в потоке знаний
+          </p>
+        </div>
+      </div>
+
+      <h2>🙏 Зачем мы это делаем</h2>
+      <p>
+        Мы верим: <span class="highlight">знание — это сила</span>. А сила — это
+        свобода выбора. Мы хотим, чтобы каждый человек имел возможность
+        <span class="highlight">увидеть себя</span> — не глазами других, а
+        честно и с любовью.
+      </p>
+      <p>
+        А если после этого возникнет желание идти дальше — мы с радостью
+        подскажем, куда.
+      </p>
+
+      <div class="btn-center">
+        <a href="index.html" class="btn-back"
+          >← Вернуться к космическому портрету</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

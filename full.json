@@ -1,0 +1,70 @@
+{
+  "user": { "name": "...", "birthDate": "...", "birthTime": "...", "birthPlace": "..." },
+  "numbers": {
+    "lifePath": 5,
+    "destiny": 7,
+    "soul": 3,
+    "personality": 4,
+    "birthDay": 14,
+    "description": { "lifePath": "...", "destiny": "...", "soul": "...", "personality": "...", "birthDay": "..." }
+  },
+  "astrology": { "zodiac": "Рыбы", "rulingPlanet": "Нептун", "element": "Вода", "description": "..." },
+  "psychomatrix": { "counts": {...}, "analysis": {...} },
+  "health": { "weakSystems": [...], "energyLevel": "...", "tendencies": [...], "recommendations": [...], "detailed": {...} },
+  "career": { "recommendedCareers": [...], "keyTalents": [...], "moneyPotential": "...", "detailed": {...} },
+    "karma": {
+    // 1. Кармические узлы (Раху и Кету)
+    "southNode": { ... },
+    "northNode": { ... },
+    "interpretation": { ... },
+    
+    // 2. Кармические долги пользователя
+    "debts": {
+      "hasDebt": true,
+      "debts": [13, 16],
+      "primaryDebt": 13,
+      "interpretations": [...],
+      "recommendations": [...],
+      "summary": "..."
+    },
+    
+    // 3. Кармическая совместимость (если есть партнёр)
+    "compatibility": {
+      "userDebt": { ... },        // Долги пользователя
+      "partnerDebt": { ... },      // Долги партнёра
+      "compatibility": {          // Анализ совместимости
+        "type": "Зеркальный кармический союз",
+        "score": 4,
+        "description": "...",
+        "strengths": "...",
+        "challenges": "..."
+      },
+      "forecast": "...",          // Кармический прогноз
+      "advice": [...]             // Советы для пары
+    }
+  },
+
+  "relationships": {
+    "relationshipType": "...",
+    "loveNeeds": [...],
+    "familyArchetype": "...",
+    "compatibility": { ... } или null,
+    "detailed": { ... }
+  },
+  "shadow": {
+    "shadowTraits": [...],
+    "risks": [...],
+    "advice": "...",
+    "detailed": { ... }
+  },
+  "forecast": {
+    "personalYear": 7,
+    "universalYear": 9,
+    "ageCycle": 3,
+    "forecast": { "focus": "...", "energy": "...", "advice": "..." },
+    "keyPeriods": [...],
+    "detailed": { ... }
+  },
+  "compatibility": { ... } или null,
+  "idealPartner": "..." или null
+}
