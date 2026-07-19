@@ -1165,7 +1165,32 @@ body {
   border-color: rgba(255, 215, 0, 0.3);
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.05);
 }
+/* ===== КНОПКА "НА ГЛАВНУЮ" В УТРЕННЕЙ ПРАКТИКЕ ===== */
+.morning-back-btn {
+  color: #a8a4c8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+}
 
+.morning-back-btn:hover {
+  border-color: rgba(255, 215, 0, 0.3);
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.03);
+}
+
+/* Адаптивность для телефона */
+@media (max-width: 480px) {
+  .morning-back-btn {
+    font-size: 0.8rem;
+    padding: 8px 18px;
+  }
+}
 .morning-note {
   color: #6a6690;
   font-size: 0.7rem;
