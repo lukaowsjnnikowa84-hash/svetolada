@@ -1044,3 +1044,157 @@ body {
     transform: scale(1.02);
   }
 }
+
+/* ===== УТРЕННЯЯ ПРАКТИКА ===== */
+.morning-fullscreen {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.morning-section {
+  background: rgba(255, 215, 0, 0.02);
+  border: 1px solid rgba(255, 215, 0, 0.05);
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin: 20px auto 30px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.morning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.morning-icon {
+  font-size: 2.8rem;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.2));
+}
+
+.morning-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #ffd700;
+  margin: 0;
+}
+
+.morning-subtitle {
+  color: #a8a4c8;
+  font-size: 0.9rem;
+  margin: -5px 0 10px;
+}
+
+.morning-sign-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.morning-sign-selector label {
+  color: #a8a4c8;
+  font-size: 0.85rem;
+}
+
+.morning-select {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: #f0eef8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+  font-family: "Inter", sans-serif;
+}
+
+.morning-select:hover {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.morning-select option {
+  background: #1a1a2e;
+  color: #f0eef8;
+}
+
+.morning-intent-box {
+  background: rgba(255, 215, 0, 0.03);
+  border-left: 3px solid #ffd700;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin: 10px 0;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#intentText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f0eef8;
+  margin: 0;
+  font-weight: 400;
+  transition: opacity 0.3s;
+}
+
+.morning-btn {
+  background: rgba(255, 215, 0, 0.06);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 30px;
+  padding: 10px 25px;
+  color: #ffd700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+}
+
+.morning-btn:hover {
+  background: rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.05);
+}
+
+.morning-note {
+  color: #6a6690;
+  font-size: 0.7rem;
+  margin: 5px 0 0;
+}
+
+/* Адаптивность для телефона */
+@media (max-width: 480px) {
+  .morning-section {
+    padding: 20px 15px;
+    margin: 15px 10px;
+  }
+  .morning-title {
+    font-size: 1.2rem;
+  }
+  #intentText {
+    font-size: 1rem;
+  }
+  .morning-intent-box {
+    padding: 15px;
+    min-height: 70px;
+  }
+  .morning-fullscreen {
+    padding: 20px 15px;
+    min-height: 70vh;
+  }
+}
+
+.main-nav .active {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☀️ Утренняя практика — Светолада</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <a href="about.html">🌿 О проекте</a>
+      <a href="index.html">🔮 Космический портрет</a>
+      <a href="morning.html" class="active">☀️ Утренняя практика</a>
+    </nav>
+
+    <!-- Утренняя практика (полноэкранная) -->
+    <section class="morning-fullscreen">
+      <div class="morning-container">
+        <div class="morning-icon">☀️</div>
+        <h1 class="morning-title">Утренняя практика</h1>
+        <p class="morning-subtitle">Начни день с намерения</p>
+
+        <div class="morning-sign-selector">
+          <label for="zodiacSelect">🌟 Мой знак:</label>
+          <select id="zodiacSelect" class="morning-select">
+            <option value="">Выберите знак</option>
+            <option value="Овен">♈ Овен</option>
+            <option value="Телец">♉ Телец</option>
+            <option value="Близнецы">♊ Близнецы</option>
+            <option value="Рак">♋ Рак</option>
+            <option value="Лев">♌ Лев</option>
+            <option value="Дева">♍ Дева</option>
+            <option value="Весы">♎ Весы</option>
+            <option value="Скорпион">♏ Скорпион</option>
+            <option value="Стрелец">♐ Стрелец</option>
+            <option value="Козерог">♑ Козерог</option>
+            <option value="Водолей">♒ Водолей</option>
+            <option value="Рыбы">♓ Рыбы</option>
+          </select>
+        </div>
+
+        <div id="morningIntent" class="morning-intent-box">
+          <p id="intentText">✨ Выберите свой знак</p>
+        </div>
+
+        <p class="morning-note">✨ Настрой себя на день</p>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
